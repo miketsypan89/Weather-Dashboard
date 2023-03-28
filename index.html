@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
@@ -14,13 +15,22 @@
     <div class="header-navbar">Weather Dashboard</div>
     <div class="two-main-sections">
         <div class="sidebar">
-            <div class="search-tool">
-                <div class="sidebar-header">Search for a City:</div>
-                <input class="input-field" placeholder="Enter City Name" type="text"></input>
-                <button>Search</button>
+            <div class="input-group">
+                <div class="form-outline">
+                    <input id="search-input" type="search" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">Enter City</label>
+                </div>
+                <button id="search-button" type="button" class="btn btn-primary">Search
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
             <div class="searched-options">
-                <button>example city</button>
+                <button type="button" class="btn btn-secondary">City 1</button>
+                <button type="button" class="btn btn-secondary">City 2</button>
+                <button type="button" class="btn btn-secondary">City 3</button>
+                <button type="button" class="btn btn-secondary">City 4</button>
+                <button type="button" class="btn btn-secondary">City 5</button>
+                <button type="button" class="btn btn-secondary">City 1</button>
             </div>
         </div>
         <div class="results-page">
