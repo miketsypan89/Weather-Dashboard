@@ -16,13 +16,9 @@
     <div class="two-main-sections">
         <div class="sidebar">
             <div class="input-group">
-                <div class="form-outline">
-                    <input id="search-input" type="search" id="form1" class="form-control" />
-                    <label class="form-label" for="form1">Enter City</label>
-                </div>
-                <button id="search-button" type="button" class="btn btn-primary">Search
-                    <i class="fas fa-search"></i>
-                </button>
+                <input type="search" class="form-control rounded" placeholder="Enter a City Name" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">search</button>
             </div>
             <div class="searched-options">
                 <button type="button" class="btn btn-secondary">City 1</button>
@@ -34,19 +30,19 @@
             </div>
         </div>
         <div class="results-page">
-            <div class="current-weather">
-                <div class="city-name">
-                    <div class="city-name">Paris</div>
+            <div class="current-weather-block">
+                <div class="city-name">Paris
+                    <div class="current-weather-details"></div>
                     <div class="current-day-time">day, mm/dd/yyyy, 00:00</div>
-                    <div class="temp">Temp:
-                        <div class="temp-result">67</div>
-                    </div>
-                    <div class="wind">Wind:
-                        <div class="wind-result">5.4 MPH</div>
-                    </div>
-                    <div class="humidity">Humidity:
-                        <div class="humidity-result">64%</div>
-                    </div>
+                </div>
+                <div class="temp">Temp:
+                    <div class="temp-result">67</div>
+                </div>
+                <div class="wind">Wind:
+                    <div class="wind-result">5.4 MPH</div>
+                </div>
+                <div class="humidity">Humidity:
+                    <div class="humidity-result">64%</div>
                 </div>
             </div>
             <div class="five-day-forecast">

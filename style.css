@@ -9,15 +9,17 @@
     font-size: 36px;
     color: rgb(248, 245, 242)
 }
-
-#search-input {
-    width: 10vw;
-}
-
 .btn-secondary {
     width: 16vw;
     margin: 5px;
     text-align: left;
+    font-size: 16px;
+}
+.form-control {
+    font-size: 18px;
+}
+.btn-outline-primary {
+    font-size: 14px;
 }
 
 .search-btn {
@@ -51,19 +53,17 @@
 }
 
 .searched-options {
-
-    border-top: solid 1px gray;
     padding-top: 10px;
     text-align: left;
 }
 
-.current-weather {
-    display: flex;
+.current-weather-block {
     border: 1px solid rgb(190, 190, 190);
     border-radius: 10px;
     padding: 10px;
     width: 75vw;
     margin-left: 20px;
+    font-size: 24px;
 }
 .five-day-forecast {
     display: flex;
@@ -73,6 +73,16 @@
     width: 75vw;
     margin-left: 20px;
     margin-top: 20px;
+}
+.city-name {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+.current-day-time {
+    padding-left: 30px;
+    color: rgb(86, 86, 255);
 }
 
 .forcast-header {
@@ -110,19 +120,43 @@
 }
 
 .forecasted-day-block {
-    padding: 10px;
+    padding: 20px;
     margin-right: 40px;
     background-color: rgb(156, 211, 224);
+    font-size: 20px;
 }
 
 .forcasted-temp {
     display: flex;
+    padding-bottom: 10px;
 }
 
 .forcasted-wind {
     display: flex;
+    padding-bottom: 10px;
 }
 
 .forcasted-humidity {
     display: flex;
+    padding-bottom: 10px;
+}
+.forcasted-temp-result {
+    padding-left: 10px;
+}
+
+.forcasted-wind-result {
+    padding-left: 10px;
+}
+
+.forcasted-humidity-result {
+    padding-left: 10px;
+}
+.temp-result {
+    padding-left: 10px;
+}
+.wind-result {
+    padding-left: 10px;
+}
+.humidity-result {
+    padding-left: 10px;
 }
