@@ -9,6 +9,10 @@
     font-size: 36px;
     color: rgb(248, 245, 242)
 }
+.input-group {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
 .btn-secondary {
     width: 16vw;
     margin: 5px;
@@ -84,7 +88,9 @@
     padding-left: 30px;
     color: rgb(86, 86, 255);
 }
-
+.em {
+    margin-left: 30px;
+}
 .forcast-header {
     display: flex;
     padding-top: 10px;
@@ -123,6 +129,7 @@
     padding: 20px;
     margin-right: 40px;
     background-color: rgb(156, 211, 224);
+    border-radius: 10px;
     font-size: 20px;
 }
 
