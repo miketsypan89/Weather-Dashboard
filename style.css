@@ -9,19 +9,23 @@
     font-size: 36px;
     color: rgb(248, 245, 242)
 }
+
 .input-group {
     padding-bottom: 25px;
     border-bottom: 1px solid rgb(190, 190, 190);
 }
+
 .btn-secondary {
     width: 16vw;
     margin: 5px;
     text-align: left;
     font-size: 16px;
 }
+
 .form-control {
     font-size: 18px;
 }
+
 .btn-outline-primary {
     font-size: 14px;
 }
@@ -69,6 +73,7 @@
     margin-left: 20px;
     font-size: 24px;
 }
+
 .five-day-forecast {
     display: flex;
     border: 1px solid rgb(190, 190, 190);
@@ -78,25 +83,30 @@
     margin-left: 20px;
     margin-top: 20px;
 }
+
 .city-name {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 36px;
 }
-.current-day-time {
+
+.current-date {
     padding-left: 30px;
     color: rgb(86, 86, 255);
 }
+
 .em {
     margin-left: 30px;
 }
+
 .forcast-header {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 36px;
 }
+
 .forcast-header {
     display: flex;
     padding-top: 10px;
@@ -147,6 +157,7 @@
     display: flex;
     padding-bottom: 10px;
 }
+
 .forcasted-temp-result {
     padding-left: 10px;
 }
@@ -158,12 +169,15 @@
 .forcasted-humidity-result {
     padding-left: 10px;
 }
+
 .temp-result {
     padding-left: 10px;
 }
+
 .wind-result {
     padding-left: 10px;
 }
+
 .humidity-result {
     padding-left: 10px;
 }

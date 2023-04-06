@@ -4,8 +4,14 @@ var searchBtn = $("#search-btn");
 var inputElement = $(".form-control")
 var apiKey = "6f019b2e75c9e60a83540d4bf5018b75"
 
+function tempConverter(kelvin) {
+    var fahrenheit = ((kelvin - 273.15) * 1.8) + 32
+    return Math.round(fahrenheit) + " ℉"
+}
+
 function getCityData() {
     var cityName = inputElement[0].value
+    addBtnSearchHistory(cityName)
     fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=10&appid=${apiKey}`)
         .then(function (response) {
             return response.json()
@@ -22,12 +28,40 @@ function getCityData() {
                 })
                 .then(function (data) {
                     console.log(data);
-                    var temp = data.list[0].main.temp
+                    var wind = (data.list[0].wind.speed)
+                    var mainWindEl = document.getElementById('main-current-wind')
+                    mainWindEl.textContent = "Wind: " + wind + " MPH";
+
+
+                    var temp = tempConverter(data.list[0].main.temp)
                     var mainTempEl = document.getElementById('main-current-temp')
                     mainTempEl.textContent = temp;
                 })
 
         })
+}
+
+function addBtnSearchHistory(cityNameParameter) {
+    // create a searched city button
+    var searchedCityBtn = document.createElement("button")
+
+    // change the text content to the searched city name parameter
+    searchedCityBtn.textContent = cityNameParameter
+
+    // add css styling
+    searchedCityBtn.classList.add("btn")
+    searchedCityBtn.classList.add("btn-secondary")
+
+    // append search button to searched optons div container
+    document.querySelector(".searched-options").appendChild(searchedCityBtn);
+
+
+}
+
+function saveToLocalStorage(cityNameParameter) {
+    // add the result to the local storage
+
+
 }
 
 searchBtn.click(getCityData);
