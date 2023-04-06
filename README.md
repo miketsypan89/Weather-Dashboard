@@ -3,7 +3,7 @@
 [*Incomplete*]
 
 
-Although it's still an incomplete app, you can already view the local weather by going to the live page here:
+Although it's still an incomplete app, you can already view the current weather of any city by going to the live page here:
 https://miketsypan89.github.io/Weather-Dashboard/
 
 Screenshot of the idea of the project:
