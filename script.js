@@ -27,15 +27,18 @@ function getCityData() {
                     return response.json()
                 })
                 .then(function (data) {
-                    console.log(data);
                     var wind = (data.list[0].wind.speed)
                     var mainWindEl = document.getElementById('main-current-wind')
                     mainWindEl.textContent = "Wind: " + wind + " MPH";
 
-
                     var temp = tempConverter(data.list[0].main.temp)
                     var mainTempEl = document.getElementById('main-current-temp')
                     mainTempEl.textContent = temp;
+
+                    var humidity = (data.list[0].main.humidity)
+                    console.log(data);
+                    var mainHumidEl = document.getElementById('main-current-humidity')
+                    mainHumidEl.textContent = "Humidity: " + humidity + "%";
                 })
 
         })
