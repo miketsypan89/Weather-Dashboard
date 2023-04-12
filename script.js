@@ -6,7 +6,7 @@ var apiKey = "6f019b2e75c9e60a83540d4bf5018b75"
 
 function tempConverter(kelvin) {
     var fahrenheit = ((kelvin - 273.15) * 1.8) + 32
-    return Math.round(fahrenheit) + " ℉"
+    return "Temp: " + Math.round(fahrenheit) + " °F"
 }
 
 function getCityData() {
@@ -36,9 +36,13 @@ function getCityData() {
                     mainTempEl.textContent = temp;
 
                     var humidity = (data.list[0].main.humidity)
-                    console.log(data);
                     var mainHumidEl = document.getElementById('main-current-humidity')
                     mainHumidEl.textContent = "Humidity: " + humidity + "%";
+                    console.log(data)
+
+                    var localDateTime = (data.list[0].dt_txt)
+                    var dateTimeEl = document.getElementById('currentDateTime')
+                    dateTimeEl.textContent = localDateTime;
                 })
 
         })
