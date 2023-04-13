@@ -40,12 +40,22 @@ function getCityData() {
                     mainHumidEl.textContent = "Humidity: " + humidity + "%";
                     console.log(data)
 
-                    var localDateTime = (data.list[0].dt_txt)
-                    var dateTimeEl = document.getElementById('currentDateTime')
-                    dateTimeEl.textContent = localDateTime;
+                    var localDateTime = formattingDate(data.list[0].dt_txt)
+                    var mainCityEl = document.getElementById('main-city-name')
+                    var timeDateEl = document.createElement("div")
+                    timeDateEl.classList.add("current-date")
+                    timeDateEl.textContent = localDateTime;
+                    mainCityEl.appendChild(timeDateEl)
                 })
 
         })
+}
+
+function formattingDate(unformattedDate) {
+    var dateArray = unformattedDate.split(/[- ]/)
+    console.log(dateArray)
+    var formattedDate = `${dateArray[1]}/${dateArray[2]}/${dateArray[0]}`
+    return formattedDate;
 }
 
 function addBtnSearchHistory(cityNameParameter) {
